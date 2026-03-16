@@ -7,9 +7,11 @@ This project demonstrates a **complete backend-driven web application** with aut
 
 ---
 
-# Website Link : https://wanderlustmajorproject-vozn.onrender.com
+### Website Link : https://wanderlustmajorproject-vozn.onrender.com
 
-# 🚀 Features
+---
+
+## 🚀 Features
 
 - Create, edit, and delete travel listings
 - Upload and manage listing images
@@ -21,7 +23,7 @@ This project demonstrates a **complete backend-driven web application** with aut
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 **Backend**
 - Node.js
@@ -52,25 +54,7 @@ This project demonstrates a **complete backend-driven web application** with aut
 
 ---
 
-# 🏗 Project Architecture
-
-The project follows **MVC (Model–View–Controller) architecture**.
-
-Wanderlust
-│
-├── models/ # Database schemas
-├── routes/ # Application routes
-├── controllers/ # Business logic
-├── views/ # EJS templates
-├── public/ # Static assets (CSS, JS)
-├── middleware/ # Custom middleware
-├── utils/ # Helper utilities
-└── app.js # Main application entry
-
-
----
-
-# 📸 Key Functionalities
+## 📸 Key Functionalities
 
 ### Property Listings
 Users can create and manage travel accommodation listings including title, description, location, price, and images.
@@ -86,36 +70,36 @@ Users can add reviews and ratings to listings, creating an interactive platform 
 
 ---
 
-# ⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/ayushhhkumar/WanderLustMajorProject.git
 
 ### 2️⃣ Navigate to Project Folder
 
-cd WanderLustMajorProject
+``` cd WanderLustMajorProject ```
 
 ### 3️⃣ Install Dependencies
 
-npm install
+``` npm install ```
 
 ### 4️⃣ Setup Environment Variables
 
 Create a .env file and add:
 
-ATLASDB\_URL=your\_mongodb\_connection
-CLOUDINARY\_CLOUD\_NAME=your\_cloudinary\_name
-CLOUDINARY\_KEY=your\_cloudinary\_key
-CLOUDINARY\_SECRET=your\_cloudinary\_secret
+``` ATLASDB\_URL=your\_mongodb\_connection 
+CLOUDINARY\_CLOUD\_NAME=your\_cloudinary\_name 
+CLOUDINARY\_KEY=your\_cloudinary\_key 
+CLOUDINARY\_SECRET=your\_cloudinary\_secret 
 SECRET=session\_secret
+```
 
 ### 5️⃣ Run the Application
 
-node app.js or nodemon app.js
+``` node app.js or nodemon app.js ```
 
-# 🌐 Future Improvements
+## 🌐 Future Improvements
 
 Google Maps integration for listing locations
 
@@ -127,7 +111,7 @@ Real-time availability updates
 
 Improved UI/UX
 
-# 📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 Through this project I learned:
 
@@ -141,7 +125,7 @@ Handling image uploads with cloud storage
 
 Structuring scalable applications using MVC architecture
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 Ayush Kumar
 
