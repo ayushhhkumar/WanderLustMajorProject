@@ -1,72 +1,141 @@
-# 🌍 Wanderlust – Travel Listing Platform
+# 🌍 Wanderlust – Travel & Stay Booking Platform (Inspired by Airbnb)
 
-Wanderlust is a **full-stack travel accommodation platform inspired by Airbnb**.  
-The application allows users to explore travel destinations, create property listings, upload images, and share reviews for listed places.
+Wanderlust is a full-stack travel accommodation platform inspired by Airbnb, enabling users to explore destinations, create property listings, upload images, and share reviews.
 
-This project demonstrates a **complete backend-driven web application** with authentication, database integration, and media storage.
-
----
-
-### Website Link : https://wanderlustmajorproject-vozn.onrender.com
+It is a backend-driven web application built using MVC architecture, demonstrating authentication, media storage, and scalable API design.
 
 ---
 
-## 🚀 Features
+## 🎯 Problem Statement
 
-- Create, edit, and delete travel listings
-- Upload and manage listing images
-- User authentication and session management
-- Add and manage reviews for listings
-- Secure routes for authorized users
-- Dynamic server-side rendering with EJS
-- Responsive UI for smooth user experience
+Finding and managing travel accommodations online requires a seamless and secure platform. Wanderlust addresses this by allowing users to:
 
----
-
-## 🛠 Tech Stack
-
-**Backend**
-- Node.js
-- Express.js
-
-**Database**
-- MongoDB Atlas
-- Mongoose
-
-**Frontend**
-- EJS (Embedded JavaScript Templates)
-- Bootstrap
-- HTML
-- CSS
-- JavaScript
-
-**Authentication**
-- Passport.js
-- Express Session
-
-**Media Storage**
-- Cloudinary
-
-**Other Tools**
-- REST APIs
-- Git
-- GitHub
+* Discover and explore travel listings
+* Create and manage property listings
+* Share experiences through reviews
+* Upload and manage images efficiently
 
 ---
 
-## 📸 Key Functionalities
+## 🚀 Live Application
 
-### Property Listings
-Users can create and manage travel accommodation listings including title, description, location, price, and images.
+🔗 https://wanderlustmajorproject-vozn.onrender.com
+
+---
+
+## 📸 Screenshots
+
+> *(Add real screenshots in a `screenshots/` folder)*
+
+![Homepage](screenshots/home.png)
+![Listing](screenshots/listing.png)
+![Review](screenshots/review.png)
+
+---
+
+## ✨ Key Features
+
+* 🏡 Create, edit, and delete travel listings
+* 🖼 Upload and manage images via Cloudinary
+* 🔐 User authentication with Passport.js
+* ⭐ Add and manage reviews for listings
+* 🛡 Secure routes for authorized users
+* ⚡ Server-side rendering using EJS
+* 📱 Responsive UI using Bootstrap
+
+---
+
+## 🧠 Tech Stack
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+* Mongoose
+
+### Frontend
+
+* EJS (Embedded JavaScript Templates)
+* Bootstrap
+* HTML, CSS, JavaScript
 
 ### Authentication
-Secure authentication implemented using **Passport.js** with session-based login and protected routes.
 
-### Image Upload
-Images are uploaded and stored using **Cloudinary**, enabling optimized media management.
+* Passport.js
+* Express Session
 
-### Reviews System
-Users can add reviews and ratings to listings, creating an interactive platform for travelers.
+### Media Storage
+
+* Cloudinary
+
+### Tools
+
+* REST APIs
+* Git & GitHub
+
+---
+
+## 🏗️ System Architecture
+
+The application follows the MVC pattern:
+
+User → EJS Views → Express Routes → Controllers → MongoDB → Response → UI
+
+* Routes handle incoming requests
+* Controllers manage business logic
+* Models interact with MongoDB
+* Views render dynamic content
+
+---
+
+## 🔌 API Design Overview
+
+* RESTful routes implemented for listings and reviews
+* CRUD operations for listings and user-generated content
+* Middleware used for authentication and authorization
+* Server-side validation for data integrity
+
+---
+
+## 🧪 Testing & QA Approach
+
+* Performed manual testing of all user flows
+* Validated authentication and protected routes
+* Tested edge cases:
+
+  * Unauthorized access attempts
+  * Invalid form inputs
+  * Image upload failures
+* Verified UI rendering across different pages
+* Debugged routes and APIs using browser dev tools
+
+---
+
+## ⚠️ Challenges & Solutions
+
+* **Authentication flow complexity** → Managed using Passport.js and sessions
+* **Image upload handling** → Integrated Cloudinary for optimized storage
+* **Route protection** → Implemented middleware for authorization
+* **Database schema design** → Structured models for scalability
+
+---
+
+## 📂 Project Structure
+
+```id="mvopx2"
+Wanderlust/
+│
+├── models/          # Mongoose schemas
+├── routes/          # Express routes
+├── controllers/     # Business logic
+├── views/           # EJS templates
+├── public/          # Static assets
+└── app.js
+```
 
 ---
 
@@ -74,68 +143,83 @@ Users can add reviews and ratings to listings, creating an interactive platform 
 
 ### 1️⃣ Clone the Repository
 
+```bash id="g37t3k"
 git clone https://github.com/ayushhhkumar/WanderLustMajorProject.git
-
-### 2️⃣ Navigate to Project Folder
-
-``` cd WanderLustMajorProject ```
-
-### 3️⃣ Install Dependencies
-
-``` npm install ```
-
-### 4️⃣ Setup Environment Variables
-
-Create a .env file and add:
-
-``` ATLASDB\_URL=your\_mongodb\_connection 
-CLOUDINARY\_CLOUD\_NAME=your\_cloudinary\_name 
-CLOUDINARY\_KEY=your\_cloudinary\_key 
-CLOUDINARY\_SECRET=your\_cloudinary\_secret 
-SECRET=session\_secret
+cd WanderLustMajorProject
 ```
 
-### 5️⃣ Run the Application
+---
 
-``` node app.js or nodemon app.js ```
+### 2️⃣ Install Dependencies
 
-## 🌐 Future Improvements
+```bash id="1nl21o"
+npm install
+```
 
-Google Maps integration for listing locations
+---
 
-Advanced search and filtering
+### 3️⃣ Setup Environment Variables
 
-Booking and reservation system
+Create a `.env` file:
 
-Real-time availability updates
+```id="xmk22a"
+ATLASDB_URL=your_mongodb_connection
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_KEY=your_cloudinary_key
+CLOUDINARY_SECRET=your_cloudinary_secret
+SECRET=session_secret
+```
 
-Improved UI/UX
+---
 
-## 📚 Learning Outcomes
+### 4️⃣ Run the Application
 
-Through this project I learned:
+```bash id="2ysol2"
+node app.js
+# or
+nodemon app.js
+```
 
-Building full-stack web applications
+---
 
-Designing RESTful APIs
+## 🚀 Deployment
 
-Implementing authentication systems
+The application is deployed using:
 
-Handling image uploads with cloud storage
+* Backend → Render Web Service
+* Database → MongoDB Atlas
+* Media Storage → Cloudinary
 
-Structuring scalable applications using MVC architecture
+---
+
+## 📚 Key Learnings
+
+* Designed and implemented MVC architecture
+* Built secure authentication systems
+* Developed RESTful APIs for scalable applications
+* Integrated third-party services like Cloudinary
+* Improved debugging and testing practices
+
+---
+
+## 🔮 Future Improvements
+
+* 📍 Google Maps integration for locations
+* 🔍 Advanced search and filtering
+* 📅 Booking and reservation system
+* ⚡ Real-time availability updates
+* 🎨 Enhanced UI/UX
+
+---
 
 ## 👨‍💻 Author
 
-Ayush Kumar
+**Ayush Kumar** <br/>
+🔗 GitHub: https://github.com/ayushhhkumar <br/>
+🔗 LinkedIn: https://www.linkedin.com/in/ayushhhkumar/
 
-GitHub:
-https://github.com/ayushhhkumar
+---
 
-LinkedIn:
-https://www.linkedin.com/in/ayushhhkumar/
+## ⭐ Support
 
-# ⭐ Support
-
-If you like this project, please consider giving it a star ⭐ on GitHub!
-
+If you found this project helpful, consider giving it a star ⭐ on GitHub!
