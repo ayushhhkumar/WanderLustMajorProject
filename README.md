@@ -25,11 +25,12 @@ Finding and managing travel accommodations online requires a seamless and secure
 
 ## 📸 Screenshots
 
-> *(Add real screenshots in a `screenshots/` folder)*
-
 ![Homepage](screenshots/homepage.png)
 ![Listing](screenshots/listingpage.png)
 ![Property](screenshots/propertyviewpage.png)
+![Login](screenshots/loginpage.png)
+![SignUp](screenshots/signuppage.png)
+
 
 ---
 
