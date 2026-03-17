@@ -27,9 +27,9 @@ Finding and managing travel accommodations online requires a seamless and secure
 
 > *(Add real screenshots in a `screenshots/` folder)*
 
-![Homepage](screenshots/home.png)
-![Listing](screenshots/listing.png)
-![Review](screenshots/review.png)
+![Homepage](screenshots/homepage.png)
+![Listing](screenshots/listingpage.png)
+![Property](screenshots/propertyviewpage.png)
 
 ---
 
